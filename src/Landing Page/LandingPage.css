@@ -21,8 +21,12 @@
 
   padding-left: 15vh;
   padding-right: 15vh;
- 
 
+
+}
+
+.linkText {
+  color: #ffcdbb;
 }
 
 .flex-item-menu-buttons {

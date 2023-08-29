@@ -37,10 +37,8 @@ function LandingPage() {
           <img className="logo" src={logo} alt="logo" />
         </div>
       </div>
- 
 
       <div className="flex-item-body">
-      
         <div className="flex-item-title">
           <h1 className="main-heading">
             Frontend Developer, UI & Graphic Designer
@@ -50,15 +48,13 @@ function LandingPage() {
           </div>
         </div>
 
-           <div className="flex-item-download">
+        <div className="flex-item-download">
           <Button className="d-button" onClick={handleDownload}>
             Download CV
           </Button>
         </div>
 
-
         <div className="flex-item-about">
-     
           <div className="about-me-div">
             <h1 className="h1">About me</h1>
           </div>
@@ -78,7 +74,6 @@ function LandingPage() {
               leave my mark on the world of design and innovation.
             </p>
           </div>
-    
         </div>
 
         <div class="flex-item-projects">
@@ -170,7 +165,7 @@ function LandingPage() {
           <div className="predictorApp">
             <div className="nationality-button-div">
               <Button className="projectButtons">
-                <Link className="linkText" to="/nationality-predictor">
+                <Link className="linkButtonText" to="/nationality-predictor">
                   Nationality Predictor App
                 </Link>
               </Button>
@@ -214,14 +209,10 @@ function LandingPage() {
 
           <div className="axiosBank">
             <div className="clone-button-div">
-              <Button className="projectButtons">
-                Apple I-Tunes API
-              </Button>
+              <Button className="projectButtons">Weather API App</Button>
             </div>
             <div className="clone-paragraph">
-              <p className="p">
-                To do...
-              </p>
+              <p className="p">To do...</p>
             </div>
             <div className="predictorAppBars">
               <div className="reactDiv">

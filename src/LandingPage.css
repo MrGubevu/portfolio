@@ -101,6 +101,7 @@ justify-content: flex-end;
 }
 
 .linkText {
+  font-size: 20px;
   color: #ffcdbb;
 }
 
@@ -163,10 +164,11 @@ justify-content: flex-end;
   color: #ffcdbb;
 }
 
-.linkText {
+.linkButtonText {
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
+  color: #ffcdbb;
 }
 
 .heading,
@@ -285,8 +287,6 @@ justify-content: flex-end;
   margin-left: 40px;
  
  }
-
-
 
  .p {
   font-size: 3vh;
