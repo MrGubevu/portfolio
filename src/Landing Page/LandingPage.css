@@ -1,0 +1,306 @@
+/* Styling for the landing page and navigation */
+
+.flex-landing-page-body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Body, Footer */
+  min-height: 100vh;
+}
+
+.flex-item-download {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.flex-item-header {
+  background-color:#2f2838;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+  padding-left: 15vh;
+  padding-right: 15vh;
+ 
+
+}
+
+.flex-item-menu-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-title {
+  display: flex;
+  width: 100%;
+  height: auto;
+  color: #ffcdbb;
+  padding-bottom: 15vh;
+  padding-top: 5vh;
+  padding-left: 10vh;
+  padding-bottom: 10vh;
+  padding-right: 10vh;
+}
+
+.flex-item-image {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  padding: 10%;
+}
+
+.flex-item-body {
+  padding: 10vh;
+  height: auto;
+  background-color:#2f2838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item-footer {
+  background-color: #51455e;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.menu-button {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border: transparent;
+  margin: 1rem;
+}
+
+.menu-button:hover {
+  background-color: #c70039;
+  color: white;
+  font-weight: 500;
+  border: transparent;
+  margin: 1rem;
+}
+
+.downloadButton {
+  padding-bottom: 10px;
+  margin-top: 2vh;
+  height: 5vh;
+  display: inline-block;
+  padding: 10px 20px; /* Fixed padding in pixels */
+  font-size: 16px;   /* Fixed font size in pixels */
+  background-color:#ffcdbb;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.projectButtons,
+.allied-button,
+.fundanii-button,
+.ska-button{
+  margin-bottom: 2vh;
+  background-color: transparent;
+  border-color: #ffcdbb;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffcdbb;
+}
+
+.projetButtons:hover{
+  background-color: transparent;
+  border: transparent;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.me {
+  width: 50vh;
+
+}
+
+.flex-item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 2vh;
+  width: 25rem;
+}
+
+.laptop {
+  width: 60vh;
+  padding-top: 5vh;
+  padding-left: 5vh;
+}
+
+.main-heading {
+  font-size: 6.5rem;
+  padding-top: 6vh;
+}
+
+.predictorApp,
+.axiosBank,
+.umgalelo,
+.portfolio,
+.alliedDiv,
+.ska,
+.freelance{
+  background-color: #51455e;
+  padding: 2%;
+  border-radius: 30px;
+  margin: 30px;
+  color: #ffcdbb;
+}
+
+
+.heading,
+.p,
+.h1 {
+
+  color: #ffcdbb;
+  text-align: justify;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  text-align: center;
+  background-color: #355c7d;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  min-width: 20vh;
+}
+
+.flex-item-experience,
+.flex-item-projects {
+  margin-top: 3vh;
+}
+
+.box-paragraph {
+  font-weight: 700;
+
+}
+
+.graphic-design-paragraph,
+.umgalelo-paragraph,
+.clone-paragraph,
+.nationality-paragraph{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.getx-button-div,
+.nationality-button-div,
+.clone-button-div,
+.umgalelo-button-div,
+.graphic-design-button-div {
+  padding-left: 2%;
+}
+
+
+
+
+.marketingDesign-div,
+.dtp-artist-paragraph,
+.dtp-artist-paragraph,
+.fundanii-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.projects-div,
+.about-me-div {
+ display: flex;
+ 
+}
+
+/* @media (min-height: 700px) {
+  .downloadButton {
+    height: 150px;
+    padding-bottom: 50px;
+   }
+} */
+
+@media (max-width: 1300px) {
+ .flex-item-title{
+  flex-direction: column-reverse;
+  justify-content: center;
+ }
+ .laptopDiv {
+  display: flex;
+  justify-content: center;
+ }
+ .flex-item-header {
+  flex-direction: column;
+  height: 200px;
+  justify-content: flex-start;
+ }
+ .flex-item-download {
+  justify-content: flex-start;
+  margin-left: 40px;
+ 
+ }
+ .downloadButton {
+  height: 50px;
+  padding-bottom: 40px;
+ }
+
+ .p {
+  font-size: 3vh;
+ }
+}
+
+
+@media (max-width: 1200px) {
+  .flex-item-title{
+   flex-direction: column-reverse;
+   justify-content: center;
+  }
+  .laptopDiv {
+   display: flex;
+   justify-content: center;
+  }
+  .flex-item-header {
+   flex-direction: column;
+   height: 200px;
+   justify-content: flex-start;
+  }
+  .flex-item-download {
+   justify-content: flex-start;
+   margin-left: 40px;
+  
+  }
+  .downloadButton {
+   height: 50px;
+   padding-bottom: 10px;
+  }
+  .p {
+   font-size: 3vh;
+  }
+ }
