@@ -9,22 +9,45 @@
 
 .flex-item-download {
   display: flex;
-  flex-direction: row;
-justify-content: flex-end;
-  background-color: #2f2838;
-  width: 100%;
+  align-items: flex-end;
+  background-color: transparent;
+  
 }
 
-
-.flex-item-header {
-  background-color:#2f2838;
+.footerInfo {
   height: 10vh;
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.flex-item-landing-header{
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8vh;
+  padding-right: 10vh;
+  height: 150px;
+  background-color: #00061c;
 
+}
+
+.flex-item-header {
+
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
   padding-left: 15vh;
   padding-right: 15vh;
+  padding-bottom: 2vh;
+  background-color: #00061c;
+  height: 10vh;
+  display: flex;
+  height: auto;
  
 
 }
@@ -36,15 +59,13 @@ justify-content: flex-end;
 
 .flex-item-title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
-  color: #ffcdbb;
-  margin-bottom: 20vh;
-  padding-bottom: 15vh;
-  padding-top: 5vh;
-  padding-left: 10vh;
-  padding-bottom: 10vh;
-  padding-right: 10vh;
+  color: #ffff;
+
+
 }
 
 .flex-item-image {
@@ -57,15 +78,25 @@ justify-content: flex-end;
 .flex-item-body {
   padding: 10vh;
   height: auto;
-  background-color:#2f2838;
+  background-color: #00061c;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
+.flex-item-landing-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #061235;
+  height: 15vh;
+  color: #ffff;
+}
 .flex-item-footer {
-  background-color: #51455e;
-  height: 20vh;
+
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +119,17 @@ justify-content: flex-end;
   margin: 1rem;
 }
 
+.download-cv-button:hover {
+  background-color: #ffff;
+  color: #00061c;
+}
+.download-cv-button {
+  background-color: transparent;
+  border-color: white;
+  width: 300px;
+  font-size: 20px; 
+}
+
 .d-button {
 
   text-align: center;
@@ -99,7 +141,9 @@ justify-content: flex-end;
   font-weight: 700;
 
 }
-
+.logo-image {
+  width: 20rem;
+}
 .linkText {
   font-size: 20px;
   color: #ffcdbb;
@@ -111,10 +155,10 @@ justify-content: flex-end;
 .ska-button{
   margin-bottom: 2vh;
   background-color: transparent;
-  border-color: #ffcdbb;
+  border-color: #00cfff;
   font-weight: 700;
   font-size: 20px;
-  color: #ffcdbb;
+  color: white;
 }
 
 .projetButtons:hover{
@@ -135,19 +179,16 @@ justify-content: flex-end;
 }
 
 .logo {
-  margin-top: 2vh;
-  width: 25rem;
+  width: 30rem;
 }
 
 .laptop {
-  width: 65vh;
-
-  
+  width: 50vh;
 }
 
 .main-heading {
   font-size: 6.5rem;
-  padding-top: 6vh;
+
 }
 
 .predictorApp,
@@ -157,18 +198,20 @@ justify-content: flex-end;
 .alliedDiv,
 .ska,
 .freelance{
-  background-color: #51455e;
+  background-color: #061235;
   padding: 2%;
   border-radius: 30px;
   margin: 30px;
-  color: #ffcdbb;
+  color: white;
 }
 
 .linkButtonText {
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
-  color: #ffcdbb;
+  color: #00cfff;
+  width: 100%;
+  height: 100%;
 }
 
 .heading,
@@ -176,7 +219,7 @@ justify-content: flex-end;
 .h1
  {
 
-  color: #ffcdbb;
+  color: white;
   text-align: justify;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -237,7 +280,13 @@ justify-content: flex-end;
 }
 
 
-
+.projectButtons:hover,
+.allied-button:hover,
+.fundanii-button:hover,
+.ska-button:hover {
+  background-color: white;
+  color: #00061c;
+}
 
 .marketingDesign-div,
 .dtp-artist-paragraph,
@@ -256,6 +305,7 @@ justify-content: flex-end;
  
 }
 
+
 /* @media (min-height: 700px) {
   .downloadButton {
     height: 150px;
@@ -266,21 +316,33 @@ justify-content: flex-end;
 @media (max-width: 1655px) {
     .laptop{
       max-width: 45vh;
+      
     }
 }
 @media (max-width: 1300px) {
  .flex-item-title{
   flex-direction: column-reverse;
-  justify-content: center;
+  justify-content: flex-start;
  }
  .laptopDiv {
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 800px;
  }
+
+ .flex-item-landing-header {
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: flex-start;
+ }
+
  .flex-item-header {
   flex-direction: column;
-  height: 200px;
   justify-content: flex-start;
+  align-items: flex-start;
+  height: 200px;
+  
  }
  .flex-item-download {
   justify-content: flex-start;
@@ -289,38 +351,91 @@ justify-content: flex-end;
  }
 
  .p {
-  font-size: 3vh;
+  font-size: 2vh;
  }
 }
 
 
 @media (max-width: 1200px) {
+  .predictorApp,
+  .axiosBank,
+  .umgalelo,
+  .portfolio,
+  .alliedDiv,
+  .ska,
+  .freelance {
+    max-width: 800px;
+    font-size: 20px;
+}
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  margin-bottom: 1vh;
+  width: 100%;
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  
+}
+  .flex-item-about {
+    align-items: flex-start;
+    padding-left: -100px;
+    max-width: 800px;
+    margin-top: 5vh;
+    
+  }
   .flex-item-title{
    flex-direction: column-reverse;
    justify-content: center;
+   align-items: center;
   }
   .laptopDiv {
-   display: flex;
-   justify-content: center;
-  }
-  .flex-item-header {
-   flex-direction: column;
-   height: 200px;
-   justify-content: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+   }
+  .flex-item-landing-header {
+    padding-left: 3%;
   }
   .flex-item-download {
    justify-content: flex-start;
    margin-left: 40px;
   
   }
-
+  .logo-image {
+    padding-left: -1%;
+  }
+  .laptop {
+    width: 35vh;
+  }
   .p {
    font-size: 2vh;
+  }
+  .main-heading {
+    max-width: 800px;
   }
  }
 
  @media (max-width: 895px) {
+  
+  .flex-item-about {
+    align-items: flex-start;
+    padding-left: -100px;
+    max-width: 600px;
+    margin-top: 5vh;
+    
+  }
   .main-heading {
+    max-width: 600px;
     font-size: 4rem;
   }
   .flex-item-title{
@@ -344,6 +459,540 @@ justify-content: flex-end;
   
   }
   .p {
-   font-size: 2vh;
+   font-size: 16px;
   }
  }
+
+ @media (max-width: 820px) {
+
+  .main-heading {
+    font-size: 6vh;
+  }
+  .flex-item-body {
+    padding-top: 1%;
+  }
+  .flex-item-landing-header {
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-div,
+  .experience-div {
+    justify-content: center;
+    
+  }
+  .footerInfo {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  .flex-item-about {
+    max-width: 600px;
+  }
+
+  .download-cv-button{
+    margin-left: 25px;
+  }
+
+
+  .predictorApp,
+  .axiosBank,
+  .umgalelo,
+  .portfolio,
+  .alliedDiv,
+  .ska,
+  .freelance {
+    max-width: 700px;
+    font-size: 14px;
+    padding-top: 30px;
+}
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  margin-bottom: 1vh;
+  width: 100%;
+  font-size: 2vh;
+
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+
+ }
+ .getx-button-div,
+ .nationality-button-div,
+ .clone-button-div,
+ .umgalelo-button-div,
+ .graphic-design-button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+ .marketingDesign-div,
+ .dtp-artist-paragraph,
+ .fundanii-div {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .fundanii-button,
+ .allied-button,
+ .ska-button {
+  margin-top: 2vh;
+  width: 100%;
+ }
+
+.p {
+  font-size: 14px;
+}
+
+
+}
+
+ @media (max-width: 540px) {
+
+  .footerInfo {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .main-heading {
+    max-width: 350px;
+  }
+  .flex-item-body {
+    padding-top: 1%;
+  }
+  .flex-item-landing-header {
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-div,
+  .experience-div {
+    justify-content: center;
+    
+  }
+  .footerInfo {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+  }
+
+  .flex-item-about {
+    max-width: 400px;
+  }
+
+  .download-cv-button{
+    margin-left: 25px;
+  }
+
+
+  .predictorApp,
+  .axiosBank,
+  .umgalelo,
+  .portfolio,
+  .alliedDiv,
+  .ska,
+  .freelance {
+    width: 400px;
+    font-size: 10px;
+    padding-top: 30px;
+}
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  margin-bottom: 1vh;
+  width: 100%;
+  font-size: 2vh;
+
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+
+ }
+ .getx-button-div,
+ .nationality-button-div,
+ .clone-button-div,
+ .umgalelo-button-div,
+ .graphic-design-button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+ .marketingDesign-div,
+ .dtp-artist-paragraph,
+ .fundanii-div {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .fundanii-button,
+ .allied-button,
+ .ska-button {
+  margin-top: 2vh;
+  width: 100%;
+ }
+
+.p {
+  font-size: 14px;
+}
+
+ }
+
+ @media (max-width: 390px) {
+  .flex-item-body {
+    padding-top: 1%;
+  }
+  .flex-item-landing-header {
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-div,
+  .experience-div {
+    justify-content: center;
+    
+  }
+  .footerInfo {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    height: 10vh;
+  }
+
+  .flex-item-about {
+    max-width: 350px;
+  }
+
+  .download-cv-button{
+    margin-left: 25px;
+  }
+
+
+  .predictorApp,
+  .axiosBank,
+  .umgalelo,
+  .portfolio,
+  .alliedDiv,
+  .ska,
+  .freelance {
+    max-width: 350px;
+    font-size: 10px;
+    padding-top: 30px;
+}
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  margin-bottom: 1vh;
+  width: 100%;
+  font-size: 2vh;
+
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+
+ }
+ .getx-button-div,
+ .nationality-button-div,
+ .clone-button-div,
+ .umgalelo-button-div,
+ .graphic-design-button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+ .marketingDesign-div,
+ .dtp-artist-paragraph,
+ .fundanii-div {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .fundanii-button,
+ .allied-button,
+ .ska-button {
+  margin-top: 2vh;
+  width: 100%;
+ }
+
+.p {
+  font-size: 14px;
+}
+
+
+}
+
+
+@media (max-width: 412px) {
+  .flex-item-body {
+    padding-top: 1%;
+  }
+  .flex-item-landing-header {
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-div,
+  .experience-div {
+    justify-content: center;
+    
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 330px;
+  }
+
+  .flex-item-about {
+    max-width: 320px;
+  }
+
+  .download-cv-button{
+    margin-left: 25px;
+  }
+
+
+  .predictorApp,
+  .axiosBank,
+  .umgalelo,
+  .portfolio,
+  .alliedDiv,
+  .ska,
+  .freelance {
+    max-width: 350px;
+    font-size: 10px;
+    padding-top: 30px;
+}
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  margin-bottom: 1vh;
+  width: 100%;
+  font-size: 2vh;
+
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+
+ }
+ .getx-button-div,
+ .nationality-button-div,
+ .clone-button-div,
+ .umgalelo-button-div,
+ .graphic-design-button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+ .marketingDesign-div,
+ .dtp-artist-paragraph,
+ .fundanii-div {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .fundanii-button,
+ .allied-button,
+ .ska-button {
+  margin-top: 2vh;
+  width: 100%;
+ }
+
+.p {
+  font-size: 14px;
+  
+}
+.main-heading {
+  font-size: 7vh;
+}
+.flex-item-landing-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+html {
+  background-color: #00061c;
+}
+}
+
+
+
+@media (max-width: 360px) {
+  .flex-item-body {
+    padding-top: 1%;
+  }
+  .flex-item-landing-header {
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-div,
+  .experience-div {
+    justify-content: center;
+    
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 330px;
+  }
+
+  .flex-item-about {
+    max-width: 320px;
+  }
+
+  .download-cv-button{
+    margin-left: 25px;
+  }
+
+
+  .predictorApp,
+  .axiosBank,
+  .umgalelo,
+  .portfolio,
+  .alliedDiv,
+  .ska,
+  .freelance {
+    max-width: 350px;
+    font-size: 10px;
+    padding-top: 30px;
+}
+.reactDiv,
+.nodeJS,
+.javaScript,
+.api,
+.adobePhotoshop,
+.adobeIllustrator {
+  margin-bottom: 1vh;
+  width: 100%;
+  font-size: 2vh;
+
+}
+
+.predictorAppBars,
+.umgaleloDiv,
+.portfolioDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+
+ }
+ .getx-button-div,
+ .nationality-button-div,
+ .clone-button-div,
+ .umgalelo-button-div,
+ .graphic-design-button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+
+ .marketingDesign-div,
+ .dtp-artist-paragraph,
+ .fundanii-div {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+
+ .fundanii-button,
+ .allied-button,
+ .ska-button {
+  margin-top: 2vh;
+  width: 100%;
+ }
+
+.p {
+  font-size: 14px;
+  
+}
+.main-heading {
+  font-size: 7vh;
+}
+.flex-item-landing-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+html {
+  background-color: #00061c;
+}
+}

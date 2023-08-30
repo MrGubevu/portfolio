@@ -2,7 +2,7 @@ import React from "react";
 import "../LandingPage.css";
 import Button from "react-bootstrap/Button";
 import logo from "../Landing Page/LandingPageAssets/ldevelops1.png";
-import laptop from "../Landing Page/LandingPageAssets/laptop.png";
+import laptop from "../laptop1.png";
 import { Link } from "react-router-dom";
 
 const handleDownload = () => {
@@ -32,9 +32,14 @@ let umgalelo =
 function LandingPage() {
   return (
     <div className="flex-landing-page-body">
-      <div className="flex-item-header">
-        <div className="flex-item-logo">
-          <img className="logo" src={logo} alt="logo" />
+      <div className="flex-item-landing-header">
+        <div className="flex-item-logo-div">
+          <img className="logo-image" src={logo} alt="logo" />
+        </div>
+        <div className="flex-item-download-div">
+          <Button className="download-cv-button" onClick={handleDownload}>
+            Download CV
+          </Button>
         </div>
       </div>
 
@@ -46,12 +51,6 @@ function LandingPage() {
           <div className="laptopDiv">
             <img alt="laptop" className="laptop" src={laptop} />
           </div>
-        </div>
-
-        <div className="flex-item-download">
-          <Button className="d-button" onClick={handleDownload}>
-            Download CV
-          </Button>
         </div>
 
         <div className="flex-item-about">
@@ -209,14 +208,39 @@ function LandingPage() {
 
           <div className="axiosBank">
             <div className="clone-button-div">
-              <Button className="projectButtons">Weather API App</Button>
+              <Button className="projectButtons">
+                <Link className="linkButtonText" to="/weatherApp">
+                  The WeatherMan App
+                </Link>
+              </Button>
             </div>
             <div className="clone-paragraph">
-              <p className="p">To do...</p>
+              <p className="p">
+                Introducing The WeatherMan App, a web application that not only
+                offers real-time weather updates for East London but also
+                showcases my journey as a front-end developer and a logo
+                designer. This project is a fusion of my technical skills in
+                React and my creative flair in crafting visual identities. With
+                the WeatherApp, users can easily access up-to-the-minute weather
+                information through an intuitive and visually captivating
+                interface.
+                <br />
+                <br />
+                The app stands as a testament to your proficiency in front-end
+                development and design. Combining real-time weather data,
+                dynamic styling, and a user-centric interface, the app is a
+                valuable asset to your portfolio. Its responsive design ensures
+                accessibility on various devices, and the incorporation of
+                features like time and date display adds to its everyday
+                practicality. Your logo design also demonstrates your creative
+                abilities, showcasing your capability to encompass branding
+                within your project
+                <br />
+              </p>
             </div>
             <div className="predictorAppBars">
               <div className="reactDiv">
-                <p className="box-paragraph">HTML</p>
+                <p className="box-paragraph">API</p>
               </div>
 
               <div className="nodeJS">
@@ -352,9 +376,11 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="flex-item-experience">
+        <div className="experience-div">
           <h1 className="heading">Experience</h1>
+        </div>
 
+        <div className="flex-item-experience">
           <div className="alliedDiv">
             <div className="marketingDesign-div">
               <div>
@@ -521,17 +547,16 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="flex-item-footer">
+      <div className="flex-item-landing-footer">
         <div className="footerInfo">
-          <p>
+          <p className="p">
             Designed in <strong>Figma</strong> & coded in{" "}
             <strong>Visual Studio Code</strong> by Me. Built with{" "}
             <strong>ReactJS</strong> & <strong>CSS</strong>.
           </p>
-        </div>
-
-        <div>
-          <p>Copyright &copy; 2023</p>
+          <div>
+            <p> Copyright &copy; 2023</p>
+          </div>
         </div>
       </div>
     </div>

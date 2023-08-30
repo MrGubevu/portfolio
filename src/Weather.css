@@ -1,0 +1,184 @@
+@media (max-width: 760px) {
+    .flex-item-weather-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #0753a0;
+    }
+    .clock-heading {
+        font-size: 40px;
+    }
+    .date-heading {
+        font-size: 20px;
+    }
+    .time-date-div {
+        background-color: rgba(7, 83, 160, 0.5); /* The last value is the alpha transparency */
+        border-radius: 20px;
+        padding: 10px;
+        
+    }
+}
+
+
+.flex-item-weather-header {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    color: white;
+    width: 100%;
+    margin-bottom: 20vh;
+    margin-top: 1.8vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
+.search-weather-button {
+    background-color:#0753a0;
+    color:white;
+    border-radius: 20px;
+    width: 120px;
+    border-color: white;
+}
+
+.flex-button-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.linkButtonText:hover {
+    color: #0753a0;
+}
+.linkButtonText {
+    color: white;
+}
+
+.project-weather-Buttons:hover{
+    background-color: white;
+    color: #0753a0;
+}
+.project-weather-Buttons {
+    border-color: white;
+    background-color: transparent;
+}
+
+.flex-item-weather-body{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    background-color: transparent;
+    color: white;
+    height: 20vh;
+}
+
+.flex-item-weather-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+.weather-man-logo {
+    width: 250px;
+    
+}
+
+.Div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    color: black;
+    background-color: aliceblue;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.cityHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.temp-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.sun-icon {
+    width: 50px;
+}
+
+.flex-item-temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempreture {
+    font-size: 60px;
+}
+
+.details-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding-top: 5px;
+}
+
+.flex-item-time-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+  
+
+}
+
+.flex-item-label {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.search-input {
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.html,
+.body {
+    background-color: #005dcc;
+}
+
+.time-date-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
