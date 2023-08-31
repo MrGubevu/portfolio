@@ -3,6 +3,8 @@ import LandingPage from "./Landing Page/LandingPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NationalityPredictor from "./Nationality-Predictor/NationalityPredictor";
 import "../src/LandingPage.css";
+import "../src/Weather.css"
+import "../src/App.css"
 import WeatherApp from "./Weather/WeatherApp";
 
 function App() {
