@@ -15,7 +15,7 @@
 }
 
 .footerInfo {
-  height: 10vh;
+  height: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,11 +91,11 @@
   justify-content: center;
   align-items: center;
   background-color: #061235;
-  height: 15vh;
+  height: 25vh;
   color: #ffff;
 }
-.flex-item-footer {
 
+.flex-item-footer {
   height: 10vh;
   display: flex;
   align-items: center;
