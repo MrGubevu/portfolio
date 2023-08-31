@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const handleDownload = () => {
   const link = document.createElement("a");
   link.href =
-    "https://drive.google.com/file/d/1dSVvvwy53mj1FyJoSpSl4tZvEp0875lU/view?usp=drive_link";
+    "https://drive.google.com/file/d/1HGi3fSs2nuRgH7mmVEDWVFH0hXTj82A6/view?usp=drive_link";
   link.target = "_blank";
   link.download = "Luthando Gubevu  - CV Resume.pdf";
   link.click();
